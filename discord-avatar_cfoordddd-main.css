@@ -1,0 +1,33 @@
+li.voice-state:not([data-reactid*="96967731307360256"]), span.name {
+    display: none;
+}
+.avatar {
+    content: url("https://cdn.discordapp.com/attachments/897683920458481674/905774777388650496/CipherFord_Discord-SKOBS_00_fit.png");
+    height: auto !important;
+    width: auto !important;
+    border-radius: 0% !important;
+    filter: brightness(50%);
+}
+.speaking {
+    content: url("https://cdn.discordapp.com/attachments/897683920458481674/905774804978794536/CipherFord_Discord-SKOBS_01_fit.png");
+    border-color: rgba(0, 0, 0, 0) !important;
+    position: relative;
+    animation-name: talking;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    filter: brightness(100%);
+}
+@keyframes talking {
+    0% {
+        bottom: 0;
+        filter: brightness(65%);
+    }
+    15% {
+        bottom: 10px;
+        filter: brightness(85%);
+    }
+    30% {
+        bottom: 0;
+        filter: brightness(100%);
+    }
+}
